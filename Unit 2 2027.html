@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Digital Technology: Unit 2</title>
+		<style>
+		/* ############################################# */
+		/*			Body Style							 */
+		/* ############################################# */		
+		/* Style the Body*/
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		/* ############################################# */
+		/*			Navbar - Main						 */
+		/* ############################################# */		
+		/* Style the Navigation bar */
+		.navbar {
+			width: 100%;
+			background-color: #80BC00;
+			overflow: auto;
+		}
+
+		/* Navigation bar links */
+		.navbar a {
+			width:20%;
+			padding: 20px 0px 20px 0px;
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		/* Style the Navigation bar HOVER*/
+		.navbar a:hover {
+			background-color:#F16522;
+			transition: 0.7s;
+		}		
+		
+		/* ############################################# */
+		/*			Navbar - Sub						 */
+		/* ############################################# */		
+		/* Style the Navigation bar */
+		.navbarB {
+			overflow: hidden ;
+			background-color: #F16522;
+			width: 100%;
+		}
+
+		/* Navigation bar links */
+		.navbarB a {
+			min-width:33.33%;
+			padding: 18px 0px 18px 0px;
+			float: left;
+			display: block;
+			color: #ffffff;
+			text-align: center;
+			text-decoration: none;
+		}
+
+		/* Style the Navigation bar HOVER*/
+		.navbarB a:hover {
+			background-color:#FDC24E;
+			color: black;
+			transition: 0.7s;
+		}
+		
+
+		/* ############################################# */
+		/*			Div Contents & sub-contents			 */
+		/* ############################################# */
+		/* Page content */
+		.content {
+			width:100%;
+			padding: 12px 0px 12px 0px;
+			display: none;
+		}
+
+		/* Page subcontent */
+		.subcontent {
+			width:100%;
+			padding: 12px 0px 12px 0px;
+			display: none;
+		}
+
+		/* Clear floats */
+		.clearfix::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+		/* H1 algin to middle as Page Title */
+		.title {
+			display: flex;
+			align-items:flex-end;
+		}
+		
+		/* Headings Setup */
+		H1 {
+			color: #00ADEE;
+		}		
+		
+		H2 {
+			background-color:#00ADEE;
+			color: white;
+			padding: 10px 0px 10px 0px ;
+			text-indent: 10px;
+		}
+		
+		h3 {
+			background-color:#BBBDBF;
+			color: black;
+			padding: 5px 0px 5px 0px ;
+			text-indent: 10px;
+		}		
+		/* ############################################# */
+		/*			Button Style						 */
+		/* ############################################# */		
+		.button {
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			background-color: #04AA6D;
+			border-radius: 10px;
+		}
+		
+		.button:hover{
+			background-color: #008CBA;
+			transition: 0.6s;
+
+		}
+	</style>
+	</head>
+	<body onload="showContent('Home')">
+
+		<div class="title">
+			<img src="resources/wjec-logo.png" alt="wjec-logo">
+			<span><h1>GCSE Digital Technology: Unit 2</h1></span>
+		</div>
+		
+		<div class="navbar">
+		  <a href="#Home" onclick="showContent('Home')">Home</a>
+		  <a href="#Scenario" onclick="showContent('Scenario')">Scenario</a>
+		  <a href="#Organisation" onclick="showContent('Organisation')">Organisation &amp; Preparation</a>
+		  <a href="#SectionA" onclick="showContent('SectionA')">Section A: Interrogating Spreadsheet Data</a>
+		  <a href="#SectionB" onclick="showContent('SectionB')">Section B: Data-Informed Digital Products</a>
+		</div>
+
+		<div id="Home" class="content" align="center">
+		  <h1>GCSE Digital Technology</h1>
+		  <h1>Unit 2: Digital Practices</h1>
+		  <h1>For 2027 Submission Only</h1>
+		</div>
+
+		<div id="Scenario" class="content">
+		  <h1>Scenario &ndash; Visit Cymru</h1>
+			<p>Visit Cymru is a national campaign that aims to increase tourism within Wales.&nbsp;It wants to promote all Wales has to offer as a global tourist destination and encourage new visitors to book holidays in Wales.</p>
+			<p>Visit Cymru has decided that it would like you to create a three-page website to achieve these aims. The website must contain&nbsp;<strong>either</strong>&nbsp;a small video game&nbsp;<strong>or</strong>&nbsp;an animation.</p>
+			<p>Visit Cymru would like you to develop data-informed digital products, and it has carried out a survey to support this.&nbsp;The data from the survey needs to be organised and analysed.&nbsp;The analysis of the data&nbsp;from the survey will&nbsp;enable you to establish the target audience, and some of their likes, to inform the designs of the website and small video game&nbsp;<strong>or</strong>&nbsp;animation.&nbsp;</p>
+			<p>It is important that you organise and document your work throughout this project. You will be provided with several files, and you will be instructed on the naming of the files and folders where your work should be saved. It is essential that you keep all the logs up to date as this will be part of your assessment.</p>
+		</div>
+
+		<div id="Organisation" class="content">
+			<h1>Organisation &amp; Preparation</h1>
+			<p>Your work must be clearly organised to allow accurate assessment.</p>
+			<p>Throughout the project you will be instructed to save your files in certain folders, with specific names and in specific formats.<br /> <br /> You can download the following resources from the button:<br /> &nbsp; &nbsp; &nbsp; &nbsp; &bull; &nbsp; &nbsp;Analysis log framework<br /> &nbsp; &nbsp; &nbsp; &nbsp; &bull; &nbsp; &nbsp;Data1.txt file<br /> &nbsp; &nbsp; &nbsp; &nbsp; &bull; &nbsp; &nbsp;Development log framework<br /> &nbsp; &nbsp; &nbsp; &nbsp; &bull; &nbsp; &nbsp;Assets log framework<br /> <br /> You must create the following folders:</p>
+			<p>Candidate Reference (In this format: &lsquo;Centre Number_Candidate Number&rsquo; for example &lsquo;58001_1234&rsquo;)</p>
+			<ul>
+				<li>Website</li>
+				<li>Assets</li>
+				<li>Game&nbsp;<strong>or</strong>Animation</li>
+				<li>Evidence</li>
+			</ul>
+			<p>The&nbsp;<strong>Website&nbsp;</strong>folder should contain:</p>
+			<ul>
+				<li>HTML pages</li>
+				<li>an Assets folder</li>
+				<li>a Game <strong>or</strong> Animation folder containing an executable file (only).</li>
+				<li>an&nbsp;Evidence&nbsp;folder that contains:
+					<ul>
+						<li>completed analysis log</li>
+						<li>completed survey spreadsheet</li>
+						<li>development log</li>
+						<li>assets log</li>
+						<li>backup folder containing the original files used to create the executable game or animation including backups showing progression. This digital product must be in a suitable format.</li>
+					</ul>
+				</li>
+			</ul>
+			<button class="button" type="button" onclick="window.open('resources/Resources_2027.zip')">Resources</button>
+		</div>
+		
+		<div id="SectionA" class="content">
+		  <h1>Section A: Interrogating Spreadsheet Data</h1>
+			<H2>Data organisation and analytics [12 marks]</H2>
+			<h3>Data Organisation</h3> 
+			<p>Visit Cymru has provided a data file: &lsquo;<strong>Data1.txt&rsquo;</strong>.</p>
+			<p>You need to import the file into a worksheet and use functions to cleanse the data, ensuring that:&nbsp;</p>
+			<ul>
+			<li>there are no duplicate records or unnecessary spaces</li>
+			<li>blank cells in the &lsquo;Have you visited Wales&rsquo; column are filled with an appropriate response</li>
+			<li>&lsquo;Age&rsquo; is rounded up to a whole number</li>
+			<li>&lsquo;Game Player Movements&rsquo; are clearly identified in upper case.&nbsp;&nbsp;</li>
+			</ul>
+			<p>Use the <strong>analysis log</strong> to show your progress, explaining the functions that you have used.</p>
+
+			<h3>Data Analytics</h3>
+			<p>The data must now be analysed to identify trends, audience and needs.<br /> <br /> Copy the cleansed data from the first worksheet into <strong>another</strong> worksheet.<br /> </p>
+			<p>Continue to use the <strong>analysis log</strong> to show your progress.<br /> </p>
+			<p>Visit Cymru requires you to:</p>
+			<ul>
+			<li>sort the data in descending order by the rounded age</li>
+			<li>use a minimum of five different functions to create a table analysing average length of a holiday</li>
+			<li>show an analysis by gender assigned at birth</li>
+			<li>use a different numerical representation to analyse the area of Wales most likely to be visited</li>
+			<li>use a different (non-number in cell) representation to analyse the type of holiday the respondents prefer</li>
+			<li>produce two suitable charts from your analysis justifying the choices you have made in your&nbsp;analysis log. &nbsp; &nbsp;</li>
+			</ul>
+			<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br /> <br /> Create another new worksheet:</p>
+			<ul>
+			<li>Carry out two further relevant investigations using the advanced techniques of what-if analysis and pivot tables</li>
+			<li>Make a note in your <strong>analysis log</strong> explaining:
+			<ul>
+			<li>what you investigated and why</li>
+			<li>which features of the software you used</li>
+			<li>what you found</li>
+			</ul>
+			</li>
+			</ul>
+			<p><strong>Save the analysis log as&nbsp;<em>Completed Analysis Log</em>&nbsp;in the Evidence folder. </strong></p>
+			<p><strong>Save the completed spreadsheet as&nbsp;<em>Completed Survey Spreadsheet</em>&nbsp;in the Evidence folder.</strong></p>
+		</div>
+
+		<div id="SectionB" class="content">
+			<div class="navbarB">
+			  <a href="#SectionB-Planning" onclick="showSubContent('SectionBPlanning')">Section B: Planning</a>
+			  <a href="#SectionB-Developing" onclick="showSubContent('SectionBDeveloping')">Section B: Developing</a>
+			  <a href="#SectionB-TestAndEval" onclick="showSubContent('SectionBTestAndEval')">Section B: Testing &amp; Evaluation</a>
+			</div>
+			
+			<h1>Section B: Data-Informed Digital Products</h1>
+			<p>You must complete Section A &ndash; interrogating spreadsheet data before you start developing the website. You will need to decide, based on the data analysis, whether you choose to develop&nbsp;<strong>either</strong>&nbsp;a game&nbsp;<strong>or</strong>&nbsp;an animation.</p>			
+		  
+			<div id="SectionBPlanning" class="subcontent">
+				<h2>Planning Website [11 marks]</h2>
+				<ul>
+					<li>Your website must consist of&nbsp;<strong>at least three</strong>&nbsp;pages.</li>
+					<li>Any images that you include in the site must be documented in the&nbsp;<strong>assets</strong><strong> log</strong>.</li>
+					<li>The website should contain no horizontal scrolling.</li>
+					<li>The website must include accessibility features.</li>
+					<li>One page must contain&nbsp;<strong>either</strong>&nbsp;the game&nbsp;<strong>or</strong>&nbsp;the animation.</li>
+					<li>One page must contain links to all the documents in the&nbsp;<strong>Evidence </strong>folder.</li>
+				</ul>
+				
+				<h3>Website Outline Designs</h3>
+				<p>Note the target audience and your choice of&nbsp;<strong>either</strong>&nbsp;game&nbsp;<strong>or</strong>&nbsp;an animation in your&nbsp;<strong>development</strong>&nbsp;<strong>log</strong>.</p>
+				<p>Produce outline designs sketches / wireframes of the website that consider the analysis of the data and feedback you have gathered from test users.</p>
+				<p>Remember to save your work regularly and keep your&nbsp;<strong>development</strong>&nbsp;<strong>log</strong>&nbsp;up to date.<br /> </p>
+
+
+				<h3>Detailed Website Design</h3>
+				<p>Produce comprehensive designs based on the chosen sketches / wireframes.</p>
+				<p>Throughout the design process you should obtain feedback from test users.</p>
+				<p>Remember to save your work regularly and keep your&nbsp;<strong>development</strong>&nbsp;<strong>log</strong>&nbsp;up to date.</p>
+				<p>You must also create designs for&nbsp;<strong>either</strong>&nbsp;the game&nbsp;<strong>or</strong>&nbsp;the animation.</p>
+				
+				<h2>Planning - Animation [7 marks]</h2>
+				<ul>
+					<li>The animation should be between 20 and 30 seconds long.</li>
+					<li>The animation must include an original cartoon character.</li>
+					<li>You should include sound in your animation. You can choose music, voiceover, incidental noise or any combination of these. At least one sound must be original.</li>
+					<li>The animation must include different scenes. The user should be able to navigate around these different scenes, for example pause, forward, replay.</li>
+				</ul>
+				<p>Include detailed storyboards with timings to outline your ideas for the animation.</p>
+				<p>Remember to save your work regularly and keep your&nbsp;<strong>development</strong><strong>log</strong>up to date.</p>
+				
+				<h2>Planning - Game [7 marks]</h2>
+				<ul>
+					<li>The game should have multiple different playable levels (rooms).</li>
+					<li>The game must include an original character.</li>
+					<li>The game must have an objective and a scoring system.</li>
+					<li>You should include sound effects in your game appropriate to the action.</li>
+				</ul>
+				<p>Include detailed storyboards for each level to outline your ideas for the game.</p>
+				<p>Remember to save your work regularly and keep your&nbsp;<strong>development</strong><strong>log</strong> up to date.</p>
+	
+			</div>
+
+			<div id="SectionBDeveloping" class="subcontent">
+				<h2>Developing digital products &ndash; assets [10 marks]</h2>
+					<p>Develop the content for&nbsp;<strong>either</strong>&nbsp;your game&nbsp;<strong>or</strong>&nbsp;animation according to the designs you created earlier. Ensure that you have a variety of content that is matched to your purpose. Remember to update your <strong>assets log</strong> detailing any issues you have faced, the tools you have used and any copyright implications.</p>
+				
+				<h2>Developing digital products &ndash; website [15 marks]</h2>
+					<p>Create a professional website according to your earlier design. Ensure that you obtain feedback that you critically evaluate and act upon where necessary.</p>
+					<p><strong>In your development log</strong>,&nbsp;detail how the website meets your design criteria and describe any issues that you encountered and how they were overcome.</p>
+
+				<h2>Developing Digital Products &ndash; Game or Animation [15 marks]</h2>
+					<p>Create&nbsp;<strong>either</strong>&nbsp;your game&nbsp;<strong>or</strong>&nbsp;your animation according to your earlier design. Ensure that you obtain feedback. Critically evaluate the feedback and act upon it where necessary.</p>
+					<p>In your development log, detail how <strong>either</strong> your game <strong>or</strong> your animation meets your design criteria and describe any issues that you encountered and how they were overcome.</p>
+					<p>Before you can deliver your digital products, you must carry out some final checks.</p>
+				
+			</div>
+			
+			<div id="SectionBTestAndEval" class="subcontent">
+				<h2>Section B: Data-Informed Digital Products - Testing &amp; Evaluation</h2>
+				
+				<h3>Testing completed products [5 marks]</h3>
+					<p>Create and implement a comprehensive test plan that assesses the functionality of all the digital products you have created. In your <strong>development log</strong> document all the testing outcomes detailing where tests have succeeded or failed. Document any changes you make to your products as a result of the testing.</p>
+				
+				<h3>Evaluating completed products [5 marks]</h3>
+					<p>Obtain feedback in the context of the target audience for your digital products.</p>
+					<p>In your <strong>development log</strong> write a report detailing how your digital products have met the aims and objectives and how the target audience feedback supports your findings.</p>
+					<p>The report should clearly identify the potential for further improvements.</p>
+			</div>
+			
+		</div>
+
+
+		<script>
+			// Function to show the content
+			function showContent(id) {
+			  // Hide all elements with class="content"
+			  var contents = document.getElementsByClassName('content');
+			  for (var i = 0; i < contents.length; i++) {
+				contents[i].style.display = 'none';
+				document.title = "Digital Technology Unit 2: "+ id;
+			  }
+			  // Show the specific tab content
+			  document.getElementById(id).style.display = 'block';
+			}
+			
+			function showSubContent(id) {
+			  // Hide all elements with class="subcontent"
+			  var contents = document.getElementsByClassName('subcontent');
+			for (var i = 0; i < contents.length; i++) {
+				contents[i].style.display = 'none';
+				document.title = "Digital Technology Unit 2: "+ id;
+			  }
+			  // Show the specific tab content
+			  document.getElementById(id).style.display = 'block';
+			}
+		</script>
+
+	</body>
+</html>
